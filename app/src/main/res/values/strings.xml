@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Oei 叫什么？</string>
+
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+
+    <string name="radio_english">English</string>
+    <string name="radio_chinese">Chinese</string>
+
+    <string name="my">My</string>
+    <string name="s">s</string>
+    <string name="contText">Continue</string>
+    <string name="answer">叫</string>
+
+    <string-array name="firstLevel">
+        <item>哥哥</item>
+        <item>妈妈</item>
+        <item>妹妹</item>
+        <item>姐姐</item>
+        <item>弟弟</item>
+        <item>爸爸</item>
+        <item>老公</item>
+    </string-array>
+</resources>
