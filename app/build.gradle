@@ -1,15 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        aceKey {
+        }
+    }
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
-
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "com.labo.code.ace.oei"
         minSdkVersion 10
         targetSdkVersion 23
-        versionCode 3
-        versionName "1.2"
+        versionCode 4
+        versionName "1.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -20,8 +24,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.google.android.gms:play-services:8.4.0'
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test:runner:0.3') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
 }
